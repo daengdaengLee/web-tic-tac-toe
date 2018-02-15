@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // import Components
 import Div from '../../atoms/Div';
@@ -9,5 +10,9 @@ const GameBoard = ({ gameStatus }) => (
     {gameStatus.map((value, index) => <Square mark={value} key={index} />)}
   </Div>
 );
+
+GameBoard.propTypes = {
+  gameStatus: PropTypes.arrayOf(PropTypes.oneOf(['X', 'O', ''])).isRequired,
+};
 
 export default GameBoard;
