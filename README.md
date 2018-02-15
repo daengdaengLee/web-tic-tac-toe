@@ -51,6 +51,14 @@
 - return:
   - button tag
 
+#### Span
+
+- props:
+  - children: node
+
+- return:
+  - span tag
+
 ### Molecules
 
 #### MainTitle
