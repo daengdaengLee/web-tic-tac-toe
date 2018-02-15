@@ -104,6 +104,17 @@
   - games 리듀서와 연결
   - playerMarker, computerMarker state 를 playerMarker, computerMarker props 에 연결
 
+#### Square
+
+- props:
+  - mark: string, isRequired
+
+- return:
+  - 게임 보드 한 칸
+    ```html
+    <span>X</span>
+    ```
+
 ### Organisms
 
 #### MainHeader
