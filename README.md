@@ -27,7 +27,8 @@
 #### Div
 
 - props:
-  - children: node, isRequired
+  - children: node
+  - styleNames: array of string
 
 - return:
   - div tag
