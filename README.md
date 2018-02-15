@@ -65,6 +65,7 @@
 
 - props:
   - chooseMarker: function, isRequired
+
 - return:
   - 마커 선택 버튼 세트
     ```html
@@ -74,9 +75,26 @@
       <!-- O 마커 버튼 -->
     </div>
     ```
+
 - reducer:
   - games 리듀서와 연결
   - chooseMarker 액션 생성자를 chooseMarker prop 에 연결
+
+#### DisplayMarker
+
+- props:
+  - playerMarker: string, isRequired
+  - computerMarker: string, isRequired
+
+- return:
+  - 마커 선택 결과 표시창
+    ```html
+    <p>player: <!-- 플레이어가 선택한 마커 -->, computer: <!-- 컴퓨터의 마커 --></p>
+    ```
+
+- reducer:
+  - games 리듀서와 연결
+  - playerMarker, computerMarker state 를 playerMarker, computerMarker props 에 연결
 
 ### Organisms
 
