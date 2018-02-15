@@ -20,6 +20,7 @@
 - props:
   - headingName: one of ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'], isRequired
   - children: node, isRequired
+    - h1 ~ h6 태그 사이에 a 태그나 span 태그가 올 수 있기 때문에 node 로 처리
 
 - return:
   - h1 ~ h6 tag
@@ -32,3 +33,13 @@
 
 - return:
   - p tag
+
+### Molecules
+
+#### MainTitle
+
+- props:
+  - children: node, isRequired
+
+- return:
+  - H Component -> h1 tag
