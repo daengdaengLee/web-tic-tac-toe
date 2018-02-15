@@ -11,4 +11,9 @@ storiesOf('Button', module)
   <Button>
     this is a button tag.
   </Button>
+))
+.add('Button Component with onClick event', () => (
+  <Button onClick={() => console.log('onClick event!')}>
+    this is a button tag with onClick event.
+  </Button>
 ));
