@@ -48,4 +48,18 @@
 
 - return:
   - H Component -> h1 tag
-  - `<h1>Tic Tac Toe</h1>`
+    ```html
+    <h1>Tic Tac Toe</h1>
+    ```
+
+### Organisms
+
+#### MainHeader
+
+- return:
+  - 페이지 헤더
+    ```html
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
+    ```
