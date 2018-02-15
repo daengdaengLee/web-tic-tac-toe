@@ -19,6 +19,7 @@
   - [Square](#square)
 - [Organisms](#organisms)
   - [MainHeader](#mainheader)
+  - [GameBoard](#gameboard)
 - [Templates](#templates)
 - [Pages](#pages)
 
@@ -144,6 +145,21 @@
       <h1>Tic Tac Toe</h1>
     </header>
     ```
+
+#### GameBoard
+
+- props:
+  - gameStatus: array of one of [ 'X', 'O', '' ]
+- return:
+  - 게임 보드 판
+    ```html
+    <div>
+      <span>X</span>
+      <span>O</span>
+      <!-- ...... -->
+    </div>
+    ```
+- reducer:
 
 ### Templates
 
