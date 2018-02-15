@@ -15,4 +15,14 @@ storiesOf('Div', module)
       this is a h1 heading.
     </H>
   </Div>
+))
+.add('Div Component with styleNames 1', () => (
+  <Div styleNames={['MY__GameBoard']}>
+    this is a Div Comp with styleNames.
+  </Div>
+))
+.add('Div Component with styleNames 2', () => (
+  <Div styleNames={['MY__GameB']}>
+    this is a Div Comp with styleNames.
+  </Div>
 ));
