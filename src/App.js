@@ -8,6 +8,7 @@ import gamesReducer from './ducks/games';
 // import Components
 import ChooseMarker from './components/molecules/ChooseMarker';
 import DisplayMarker from './components/molecules/DisplayMarker';
+import GameBoard from './components/organisms/GameBoard';
 
 // create store
 let store = createStore(gamesReducer);
@@ -18,6 +19,7 @@ function App() {
       <div>
         <DisplayMarker />
         <ChooseMarker />
+        <GameBoard />
       </div>
     </Provider>
   );

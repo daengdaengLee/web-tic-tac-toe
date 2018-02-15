@@ -12,7 +12,13 @@ export function chooseMarker(marker) {
 
 // Reducer
 
-export default function reducer(state = {}, action = {}) {
+const initState = {
+  gameStatus: ['', '', '', '', '', '', '', '', ''],
+  playerMarker: '',
+  computerMarker: '',
+};
+
+export default function reducer(state = initState, action = {}) {
   switch(action.type) {
     case CHOOSE_MARKER: return applyChooseMarker(state, action);
     default: return state;
