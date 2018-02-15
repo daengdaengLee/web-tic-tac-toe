@@ -8,7 +8,7 @@ import Div from '../../atoms/Div';
 const MarkerX = ({ chooseMarker }) => <Button onClick={() => chooseMarker('X')}>X</Button>;
 const MarkerY = ({ chooseMarker }) => <Button onClick={() => chooseMarker('O')}>O</Button>;
 
-const ChooseMarker = ({ chooseMarker }) => (
+const ChooseMarkerForm = ({ chooseMarker }) => (
   <Div>
     <MarkerX chooseMarker={chooseMarker} />
     or
@@ -16,8 +16,8 @@ const ChooseMarker = ({ chooseMarker }) => (
   </Div>
 );
 
-ChooseMarker.propTypes = {
+ChooseMarkerForm.propTypes = {
   chooseMarker: PropTypes.func.isRequired,
 };
 
-export default ChooseMarker;
+export default ChooseMarkerForm;

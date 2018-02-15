@@ -4,9 +4,9 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import ChooseMarker from './presenter';
+import ChooseMarkerForm from './presenter';
 
-storiesOf('ChooseMarker', module)
-.add('ChooseMarker Component', () => <ChooseMarker
+storiesOf('ChooseMarkerForm', module)
+.add('ChooseMarkerForm Component', () => <ChooseMarkerForm
   chooseMarker={marker => console.log(marker)}
 />);

@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 import { chooseMarker } from '../../../ducks/games';
 
 // import presenter Component
-import ChooseMarker from './presenter';
+import ChooseMarkerForm from './presenter';
 
 function mapDispatchToProps(dispatch) {
   return {
@@ -13,4 +13,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(null, mapDispatchToProps)(ChooseMarker);
+export default connect(null, mapDispatchToProps)(ChooseMarkerForm);
