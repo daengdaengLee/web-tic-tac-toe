@@ -21,6 +21,7 @@
 - [Organisms](#organisms)
   - [MainHeader](#mainheader)
   - [GameBoard](#gameboard)
+  - [ChooseMarkerForm](#choosemarkerform)
 - [Templates](#templates)
 - [Pages](#pages)
 
@@ -168,6 +169,19 @@
     </div>
     ```
 - reducer:
+  - games 리듀서에 연결
+  - gameStatus state 를 props 에 연결
+
+#### ChooseMarkerForm
+
+- return:
+  - 마커 선택 영역
+  ```html
+  <div>
+    <!-- 마커 선택 영역 라벨 -->
+    <!-- 마커 선택 버튼 -->
+  </div>
+  ```
 
 ### Templates
 
