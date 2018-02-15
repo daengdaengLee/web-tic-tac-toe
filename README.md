@@ -61,6 +61,23 @@
     <h1>Tic Tac Toe</h1>
     ```
 
+#### ChooseMarker
+
+- props:
+  - chooseMarker: function, isRequired
+- return:
+  - 마커 선택 버튼 세트
+    ```html
+    <div>
+      <!-- X 마커 버튼 -->
+      or
+      <!-- O 마커 버튼 -->
+    </div>
+    ```
+- reducer:
+  - games 리듀서와 연결
+  - chooseMarker 액션 생성자를 chooseMarker prop 에 연결
+
 ### Organisms
 
 #### MainHeader
