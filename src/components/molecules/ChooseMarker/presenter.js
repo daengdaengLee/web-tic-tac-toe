@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // import Components
 import Button from '../../atoms/Button';
@@ -14,5 +15,9 @@ const ChooseMarker = ({ chooseMarker }) => (
     <MarkerY chooseMarker={chooseMarker} />
   </Div>
 );
+
+ChooseMarker.propTypes = {
+  chooseMarker: PropTypes.func.isRequired,
+};
 
 export default ChooseMarker;
