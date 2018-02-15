@@ -5,17 +5,22 @@
 
 ## 컴포넌트
 
-- [Atoms](#Atoms)
-  - [Div](#Div)
-  - [H](#H)
-  - [P](#P)
-  - [Header](#Header)
-  - [Button](#Button)
-  - [Span](#Span)
-- [Molecules](#Molecules)
-- [Organisms](#Organisms)
-- [Templates](#Templates)
-- [Pages](#Pages)
+- [Atoms](#atoms)
+  - [Div](#div)
+  - [H](#h)
+  - [P](#p)
+  - [Header](#header)
+  - [Button](#button)
+  - [Span](#span)
+- [Molecules](#molecules)
+  - [MainTitle](#maintitle)
+  - [ChooseMarker](#choosemarker)
+  - [DisplayMarker](#displaymarker)
+  - [Square](#square)
+- [Organisms](#organisms)
+  - [MainHeader](#mainheader)
+- [Templates](#templates)
+- [Pages](#pages)
 
 ### Atoms
 
