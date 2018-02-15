@@ -17,6 +17,7 @@
   - [ChooseMarker](#choosemarker)
   - [DisplayMarker](#displaymarker)
   - [Square](#square)
+  - [ChooseMarkerLabel](#choosemarkerlabel)
 - [Organisms](#organisms)
   - [MainHeader](#mainheader)
   - [GameBoard](#gameboard)
@@ -133,6 +134,13 @@
     ```html
     <span>X</span>
     ```
+
+#### ChooseMarkerLabel
+
+- return:
+  ```html
+  <p>Choose your marker</p>
+  ```
 
 ### Organisms
 
