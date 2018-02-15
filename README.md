@@ -42,6 +42,14 @@
 - return:
   - header tag
 
+#### Button
+
+- props:
+  - children: node, isRequired
+
+- return:
+  - button tag
+
 ### Molecules
 
 #### MainTitle
