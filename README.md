@@ -14,14 +14,14 @@
   - [Span](#span)
 - [Molecules](#molecules)
   - [MainTitle](#maintitle)
-  - [ChooseMarker](#choosemarker)
+  - [ChooseMarkerFrom](#choosemarkerForm)
   - [DisplayMarker](#displaymarker)
   - [Square](#square)
   - [ChooseMarkerLabel](#choosemarkerlabel)
 - [Organisms](#organisms)
   - [MainHeader](#mainheader)
   - [GameBoard](#gameboard)
-  - [ChooseMarkerForm](#choosemarkerform)
+  - [ChooseMarker](#choosemarker)
 - [Templates](#templates)
 - [Pages](#pages)
 
@@ -90,7 +90,7 @@
     <h1>Tic Tac Toe</h1>
     ```
 
-#### ChooseMarker
+#### ChooseMarkerForm
 
 - props:
   - chooseMarker: function, isRequired
@@ -172,7 +172,7 @@
   - games 리듀서에 연결
   - gameStatus state 를 props 에 연결
 
-#### ChooseMarkerForm
+#### ChooseMarker
 
 - return:
   - 마커 선택 영역
