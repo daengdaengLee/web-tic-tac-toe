@@ -7,8 +7,4 @@ import { linkTo } from '@storybook/addon-links';
 import MainTitle from './index';
 
 storiesOf('MainTitle', module)
-.add('MainTitle Component', () => (
-  <MainTitle>
-    Tic Tac Toe
-  </MainTitle>
-));
+.add('MainTitle Component', () => <MainTitle />);
