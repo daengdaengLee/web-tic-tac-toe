@@ -46,6 +46,7 @@
 
 - props:
   - children: node, isRequired
+  - onClick: function
 
 - return:
   - button tag
