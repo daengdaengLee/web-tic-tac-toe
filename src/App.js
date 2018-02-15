@@ -6,8 +6,8 @@ import { Provider } from 'react-redux';
 import gamesReducer from './ducks/games';
 
 // import Components
-import ChooseMarker from './components/molecules/ChooseMarker';
 import DisplayMarker from './components/molecules/DisplayMarker';
+import ChooseMarkerForm from './components/organisms/ChooseMarkerForm';
 import GameBoard from './components/organisms/GameBoard';
 
 // create store
@@ -18,7 +18,7 @@ function App() {
     <Provider store={store}>
       <div>
         <DisplayMarker />
-        <ChooseMarker />
+        <ChooseMarkerForm />
         <GameBoard />
       </div>
     </Provider>
