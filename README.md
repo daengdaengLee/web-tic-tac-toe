@@ -34,6 +34,14 @@
 - return:
   - p tag
 
+#### Header
+
+- props:
+  - children: node, isRequired
+
+- return:
+  - header tag
+
 ### Molecules
 
 #### MainTitle
