@@ -38,8 +38,6 @@
 
 #### MainTitle
 
-- props:
-  - children: node, isRequired
-
 - return:
   - H Component -> h1 tag
+  - `<h1>Tic Tac Toe</h1>`
