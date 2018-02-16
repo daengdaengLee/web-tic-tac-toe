@@ -94,7 +94,7 @@
 #### ChooseMarkerForm
 
 - props:
-  - chooseMarker: function, isRequired
+  - chooseMarker: function, isRequired, connected to store state
 
 - return:
   - 마커 선택 버튼 세트
@@ -113,8 +113,8 @@
 #### DisplayMarker
 
 - props:
-  - playerMarker: string, isRequired
-  - computerMarker: string, isRequired
+  - playerMarker: string, isRequired, connected to store state
+  - computerMarker: string, isRequired, connected to store state
 
 - return:
   - 마커 선택 결과 표시창
@@ -159,7 +159,7 @@
 #### GameBoard
 
 - props:
-  - gameStatus: array of one of [ 'X', 'O', '' ]
+  - gameStatus: array of one of [ 'X', 'O', '' ], isRequired, connected to store state
 - return:
   - 게임 보드 판
     ```html
@@ -171,7 +171,7 @@
     ```
 - reducer:
   - games 리듀서에 연결
-  - gameStatus state 를 props 에 연결
+  - gameStatus state 를 gameStatus prop 에 연결
 
 #### ChooseMarker
 
