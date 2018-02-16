@@ -13,6 +13,7 @@ export function chooseMarker(marker) {
 // Reducer
 
 const initState = {
+  gameProcess: 'chooseMarker',
   gameStatus: ['', '', '', '', '', '', '', '', ''],
   playerMarker: '',
   computerMarker: '',
@@ -32,12 +33,14 @@ function applyChooseMarker(state, action) {
     case 'X':
       return {
         ...state,
+        gameProcess: 'isPlaying',
         playerMarker: 'X',
         computerMarker: 'O',
       };
     case 'O':
       return {
         ...state,
+        gameProcess: 'isPlaying',
         playerMarker: 'O',
         computerMarker: 'X',
       };
