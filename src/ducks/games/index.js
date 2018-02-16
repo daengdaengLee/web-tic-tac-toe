@@ -1,9 +1,6 @@
-// Import
-
 // Actions
 
-const CHOOSE_MARKER = 'tic-tac-toe/games/CHOOSE_MARKER';
-const SELECT_SQUARE = 'tic-tac-toe/games/SELECT_SQUARE';
+import { CHOOSE_MARKER, SELECT_SQUARE, COMPUTER_CALL } from './actions';
 
 // Action Creators
 
@@ -29,6 +26,7 @@ export default function reducer(state = initState, action = {}) {
   switch(action.type) {
     case CHOOSE_MARKER: return applyChooseMarker(state, action);
     case SELECT_SQUARE: return applySelectSquare(state, action);
+    case COMPUTER_CALL: return applyComputerCall(state);
     default: return state;
   }
 }
@@ -71,4 +69,8 @@ function applySelectSquare(state, action) {
       };
     default: return state;
   }
+}
+
+function applyComputerCall(state) {
+  return state;
 }
