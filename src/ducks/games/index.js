@@ -11,6 +11,10 @@ export function chooseMarker(marker) {
   return { type: CHOOSE_MARKER, marker };
 }
 
+export function selectSquare(squareID) {
+  return { type: SELECT_SQUARE, squareID };
+}
+
 // Reducer
 
 const initState = {
