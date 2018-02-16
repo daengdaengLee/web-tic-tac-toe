@@ -3,6 +3,7 @@
 // Actions
 
 const CHOOSE_MARKER = 'tic-tac-toe/games/CHOOSE_MARKER';
+const SELECT_SQUARE = 'tic-tac-toe/games/SELECT_SQUARE';
 
 // Action Creators
 
