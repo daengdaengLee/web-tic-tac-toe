@@ -4,9 +4,10 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import GameBoard from './presenter';
+import StorybookProvider from '../../../utils/StorybookProvider';
+
+import GameBoard from './index';
 
 storiesOf('GameBoard', module)
-.add('GameBoard Component', () => (
-  <GameBoard gameStatus={['X', 'X', 'X', 'X', 'X', 'X', 'O', 'O', 'O']} />
-));
+.addDecorator(story => <StorybookProvider story={story()} />)
+.add('GameBoard Component', () => <GameBoard />);
