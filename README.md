@@ -133,6 +133,9 @@
 
 - props:
   - mark: string, isRequired
+  - id: number, isRequired
+  - selectSquare: function, isRequired
+    클릭하면 selectSquare(id) 가 실행됨
 
 - return:
   - 게임 보드 한 칸
