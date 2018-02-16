@@ -165,9 +165,12 @@
   - 게임 보드 판
     ```html
     <div>
-      <span>X</span>
-      <span>O</span>
-      <!-- ...... -->
+      <!-- 마커 표시 -->
+      <div>
+        <span>X</span>
+        <span>O</span>
+        <!-- ...... -->
+      </div>
     </div>
     ```
 - reducer:
