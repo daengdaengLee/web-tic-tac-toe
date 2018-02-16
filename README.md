@@ -78,6 +78,7 @@
 
 - props:
   - children: node
+  - styleNames: array of string
 
 - return:
   - span tag
