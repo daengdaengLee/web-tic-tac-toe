@@ -27,6 +27,7 @@ const initState = {
 export default function reducer(state = initState, action = {}) {
   switch(action.type) {
     case CHOOSE_MARKER: return applyChooseMarker(state, action);
+    case SELECT_SQUARE: return applySelectSquare(state, action);
     default: return state;
   }
 }
