@@ -22,6 +22,7 @@ const initState = {
   gameStatus: ['', '', '', '', '', '', '', '', ''],
   playerMarker: '',
   computerMarker: '',
+  winner: '',
 };
 
 export default function reducer(state = initState, action = {}) {
