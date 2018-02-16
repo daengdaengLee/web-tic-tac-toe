@@ -1,5 +1,3 @@
-import React from 'react';
-
 // import HOCs
 import withValidProps from './withValidProps';
 
