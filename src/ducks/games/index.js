@@ -13,7 +13,7 @@ export function chooseMarker(marker) {
 // Reducer
 
 const initState = {
-  gameProcess: 'chooseMarker',
+  gameProcess: 'chooseMarker',  // 'chooseMarker', 'isPlaying'
   gameStatus: ['', '', '', '', '', '', '', '', ''],
   playerMarker: '',
   computerMarker: '',
