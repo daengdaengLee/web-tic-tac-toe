@@ -4,10 +4,14 @@ import PropTypes from 'prop-types';
 // import Components
 import Div from '../../atoms/Div';
 import Square from '../../molecules/Square';
+import DisplayMarker from '../../molecules/DisplayMarker';
 
 const GameBoard = ({ gameStatus }) => (
-  <Div styleNames={['MY__GameBoard']}>
-    {gameStatus.map((value, index) => <Square mark={value} key={index} />)}
+  <Div>
+    <DisplayMarker />
+    <Div styleNames={['MY__GameBoard']}>
+      {gameStatus.map((value, index) => <Square mark={value} key={index} />)}
+    </Div>
   </Div>
 );
 
