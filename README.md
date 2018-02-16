@@ -79,6 +79,7 @@
 - props:
   - children: node
   - styleNames: array of string
+  - onClick: function
 
 - return:
   - span tag
