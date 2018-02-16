@@ -8,7 +8,7 @@ import ChooseMarkerForm from '../../molecules/ChooseMarkerForm';
 const ChooseMarker = () => (
   <Div>
     <ChooseMarkerLabel />
-    <ChooseMarker />
+    <ChooseMarkerForm />
   </Div>
 );
 

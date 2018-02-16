@@ -7,7 +7,7 @@ import gamesReducer from './ducks/games';
 
 // import Components
 import DisplayMarker from './components/molecules/DisplayMarker';
-import ChooseMarkerForm from './components/organisms/ChooseMarkerForm';
+import ChooseMarker from './components/organisms/ChooseMarker';
 import GameBoard from './components/organisms/GameBoard';
 
 // create store
@@ -18,7 +18,7 @@ function App() {
     <Provider store={store}>
       <div>
         <DisplayMarker />
-        <ChooseMarkerForm />
+        <ChooseMarker />
         <GameBoard />
       </div>
     </Provider>
