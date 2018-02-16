@@ -25,6 +25,7 @@
 - [Templates](#templates)
   - [GameTemplate](#gametemplate)
 - [Pages](#pages)
+  - [GamePage](#gamepage)
 
 ### Atoms
 
@@ -202,3 +203,21 @@
     ```
 
 ### Pages
+
+#### GamePage
+
+- props:
+  - gameProcess: string, isRequired, connected to store state
+
+- return:
+  - 게임 화면
+    ```html
+    <div>
+      <!-- Header -->
+      <!-- 게임 진행 판 -->
+    </div>
+    ```
+
+- reducer:
+  - games 리듀서에 연결
+  - gameProcess state 를 gameProcess prop 에 연결
