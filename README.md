@@ -23,6 +23,7 @@
   - [GameBoard](#gameboard)
   - [ChooseMarker](#choosemarker)
 - [Templates](#templates)
+  - [GameTemplate](#gametemplate)
 - [Pages](#pages)
 
 ### Atoms
@@ -184,5 +185,20 @@
   ```
 
 ### Templates
+
+#### GameTemplate
+
+- props:
+  - header: node, isRequired
+  - gameDisplay: node, isRequired
+
+- return:
+  - 게임 화면
+    ```html
+    <div>
+      <!-- Header -->
+      <!-- 게임 진행 판 -->
+    </div>
+    ```
 
 ### Pages
