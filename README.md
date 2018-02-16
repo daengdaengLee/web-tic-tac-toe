@@ -18,6 +18,7 @@
   - [DisplayMarker](#displaymarker)
   - [Square](#square)
   - [ChooseMarkerLabel](#choosemarkerlabel)
+  - [DisplayWinner](#displaywinner)
 - [Organisms](#organisms)
   - [MainHeader](#mainheader)
   - [GameBoard](#gameboard)
@@ -149,6 +150,21 @@
   ```html
   <p>Choose your marker</p>
   ```
+
+#### DisplayWinner
+
+- props:
+  - winner: string, isRequired
+
+- return:
+  - 승자 표시 판
+  ```html
+  <p> <!-- 승자 --> </p>
+  ```
+
+- reducer:
+  - games 리듀서와 연결
+  - winner state 를 winner prop 에 연결
 
 ### Organisms
 
