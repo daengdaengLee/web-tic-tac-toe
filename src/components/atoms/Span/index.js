@@ -10,13 +10,21 @@ import makeClassName from '../../../utils/makeClassName';
 // import CSS
 import './index.css';
 
-const Temp = ({ children, styleNames }) => <span className={makeClassName(styleNames)}>{children}</span>;
+const Temp = ({ children, styleNames, onClick }) => (
+  <span
+    className={makeClassName(styleNames)}
+    onClick={onClick}
+  >
+    {children}
+  </span>
+);
 
 const Span = withValidStyleNames(['My__Square'])(Temp);
 
 Span.propTypes = {
   children: PropTypes.node,
   styleNames: PropTypes.arrayOf(PropTypes.oneOf(['My__Square'])),
+  onClick: PropTypes.func,
 };
 
 export default Span;
