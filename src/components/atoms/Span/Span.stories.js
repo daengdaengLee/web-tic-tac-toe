@@ -11,4 +11,9 @@ storiesOf('Span', module)
   <Span>
     this is a span tag.
   </Span>
+))
+.add('Span Component with onClick', () => (
+  <Span onClick={() => console.log('this is an onClick prop.')}>
+    this is a span tag wiht onClick prop.
+  </Span>
 ));
