@@ -53,3 +53,21 @@ function applyChooseMarker(state, action) {
     default: return state;
   }
 }
+
+function applySelectSquare(state, action) {
+  const frontEndStatus = state.gameStatus.slice(0, action.squareID);
+  const backEndStatus = state.gameStatus.slice(action.squareID + 1);
+  switch(state.playerMarker) {
+    case 'X':
+      return {
+        ...state,
+        gameStatus: frontEndStatus.concat('X', backEndStatus),
+      };
+    case 'O':
+      return {
+        ...state,
+        gameStatus: frontEndStatus.concat('O', backEndStatus),
+      };
+    default: return state;
+  }
+}
