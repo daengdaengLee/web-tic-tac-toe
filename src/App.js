@@ -1,21 +1,36 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { createStore, applyMiddleware } from 'redux';
+import createSagaMiddleware  from 'redux-saga';
+import { Provider } from 'react-redux';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+// import reducers
+import gamesReducer from './ducks/games';
+
+// import sagas
+import mySaga from './ducks/games/sagas';
+
+// import Components
+import GamePage from './components/pages/GamePage';
+
+// create saga middleware
+const sagaMiddleware = createSagaMiddleware();
+
+// create store
+const store = createStore(
+  gamesReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), // enable Redux DevTools Extension
+  applyMiddleware(sagaMiddleware)
+);
+
+// then run the saga
+sagaMiddleware.run(mySaga);
+
+function App() {
+  return (
+    <Provider store={store}>
+      <GamePage />
+    </Provider>
+  );
 }
 
 export default App;
