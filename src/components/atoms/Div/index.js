@@ -15,11 +15,16 @@ const Temp = ({
   styleNames,
 }) => <div className={makeClassName(styleNames)}>{children}</div>;
 
-const Div = withValidStyleNames(['MY__GameBoard'])(Temp);
+const validStyleNames = [
+  'MY__GameBoard',
+  'Horizontal__Center',
+];
+
+const Div = withValidStyleNames(validStyleNames)(Temp);
 
 Div.propTypes = {
   children: PropTypes.node,
-  styleNames: PropTypes.arrayOf(PropTypes.oneOf(['MY__GameBoard'])),
+  styleNames: PropTypes.arrayOf(PropTypes.oneOf(validStyleNames)),
 };
 
 export default Div;
