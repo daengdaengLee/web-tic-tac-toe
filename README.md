@@ -20,7 +20,7 @@ Atomic Design 을 반영하여 개발했습니다.
 
 ## 1. 데모 페이지
 
-데모 페이지는 여기에서 확인할 수 있습니다.
+데모 페이지는 [여기](https://daengdaenglee.github.io/web-tic-tac-toe)에서 확인할 수 있습니다.
 
 로컬에서 실행할 경우 git, node.js, npm 이 필요합니다.
 
