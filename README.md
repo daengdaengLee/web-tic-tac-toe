@@ -154,7 +154,7 @@
 #### DisplayWinner
 
 - props:
-  - winner: string, isRequired
+  - winner: string, isRequired, connected to store state
 
 - return:
   - 승자 표시 판
