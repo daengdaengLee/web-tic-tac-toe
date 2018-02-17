@@ -19,7 +19,7 @@ const Div = withValidStyleNames(['MY__GameBoard'])(Temp);
 
 Div.propTypes = {
   children: PropTypes.node,
-  styleNames: PropTypes.arrayOf(PropTypes.string),
+  styleNames: PropTypes.arrayOf(PropTypes.oneOf(['MY__GameBoard'])),
 };
 
 export default Div;
