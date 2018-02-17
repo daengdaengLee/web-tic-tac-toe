@@ -19,7 +19,7 @@ const Temp = ({ children, styleNames, onClick }) => (
   </span>
 );
 
-const Span = withValidStyleNames([
+const validStyleNames = [
   'My__Square',
   'Square__0',
   'Square__1',
@@ -30,22 +30,13 @@ const Span = withValidStyleNames([
   'Square__6',
   'Square__7',
   'Square__8',
-])(Temp);
+];
+
+const Span = withValidStyleNames(validStyleNames)(Temp);
 
 Span.propTypes = {
   children: PropTypes.node,
-  styleNames: PropTypes.arrayOf(PropTypes.oneOf([
-    'My__Square',
-    'Square__0',
-    'Square__1',
-    'Square__2',
-    'Square__3',
-    'Square__4',
-    'Square__5',
-    'Square__6',
-    'Square__7',
-    'Square__8',
-  ])),
+  styleNames: PropTypes.arrayOf(PropTypes.oneOf(validStyleNames)),
   onClick: PropTypes.func,
 };
 
