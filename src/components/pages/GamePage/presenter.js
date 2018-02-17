@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // import Components
+import DisplayWinner from '../../molecules/DisplayWinner';
 import MainHeader from '../../organisms/MainHeader';
 import ChooseMarker from '../../organisms/ChooseMarker';
 import GameBoard from '../../organisms/GameBoard';
@@ -15,6 +16,9 @@ const GamePagePresenter = ({ gameProcess }) => {
       break;
     case 'isPlaying':
       gameDisplay = <GameBoard />;
+      break;
+    case 'endGame':
+      gameDisplay = <DisplayWinner />;
       break;
     default: gameDisplay = 'No Game';
   }
