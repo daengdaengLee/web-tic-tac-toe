@@ -1,6 +1,6 @@
 // Actions
 
-import { CHOOSE_MARKER, SELECT_SQUARE, COMPUTER_CALL, IS_PLAYER_WIN, IS_GAME_END } from './actions';
+import { CHOOSE_MARKER, SELECT_SQUARE, COMPUTER_CALL, IS_PLAYER_WIN, IS_GAME_END, RESTART } from './actions';
 
 // Action Creators
 
@@ -9,6 +9,9 @@ export function chooseMarker(marker) {
 }
 export function selectSquare(squareID) {
   return { type: SELECT_SQUARE, squareID };
+}
+export function restart() {
+  return { type: RESTART };
 }
 
 // Reducer
@@ -28,6 +31,7 @@ export default function reducer(state = initState, action = {}) {
     case IS_PLAYER_WIN: return applyIsPlayerWin(state);
     case COMPUTER_CALL: return applyComputerCall(state);
     case IS_GAME_END: return applyIsGameEnd(state);
+    case RESTART: return applyRestart(state);
     default: return state;
   }
 }
@@ -201,6 +205,15 @@ function applyIsGameEnd(state) {
     ...state,
     gameProcess: 'endGame',
     winner: 'draw',
+  };
+}
+
+function applyRestart(state) {
+  return {
+    ...state,
+    gameProcess: 'isPlaying',
+    gameStatus: ['', '', '', '', '', '', '', '', ''],
+    winner: '',
   };
 }
 
