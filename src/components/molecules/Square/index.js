@@ -6,7 +6,7 @@ import Span from '../../atoms/Span';
 
 const Square = ({ mark, id, selectSquare }) => (
   <Span
-    styleNames={['My__Square']}
+    styleNames={['My__Square', `Square__${id}`]}
     onClick={() => selectSquare(id)}
   >
     {mark}
