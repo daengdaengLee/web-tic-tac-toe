@@ -6,7 +6,7 @@ import ChooseMarkerLabel from '../../molecules/ChooseMarkerLabel';
 import ChooseMarkerForm from '../../molecules/ChooseMarkerForm';
 
 const ChooseMarker = () => (
-  <Div>
+  <Div styleNames={['Horizontal__Center']}>
     <ChooseMarkerLabel />
     <ChooseMarkerForm />
   </Div>
