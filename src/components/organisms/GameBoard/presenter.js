@@ -7,7 +7,7 @@ import Square from '../../molecules/Square';
 import DisplayMarker from '../../molecules/DisplayMarker';
 
 const GameBoard = ({ gameStatus, selectSquare }) => (
-  <Div>
+  <Div styleNames={['Horizontal__Center']}>
     <DisplayMarker />
     <Div styleNames={['MY__GameBoard']}>
       {gameStatus.map((value, index) => <Square
