@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import P from '../../atoms/P';
 
 const DisplayWinnerPresenter = ({ winner }) => {
-  if(winner === 'draw') return <P>Draw!</P>;
-  return <P>Winner is {winner}!</P>;
+  if(winner === 'draw') return <P styleNames={['Horizontal__Center']}>Draw!</P>;
+  return <P styleNames={['Horizontal__Center']}>Winner is {winner}!</P>;
 };
 
 DisplayWinnerPresenter.propTypes = {
