@@ -18,6 +18,7 @@ const sagaMiddleware = createSagaMiddleware();
 // create store
 const store = createStore(
   gamesReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), // enable Redux DevTools Extension
   applyMiddleware(sagaMiddleware)
 );
 
