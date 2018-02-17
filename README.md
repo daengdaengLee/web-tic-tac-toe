@@ -3,7 +3,32 @@
 
 ## 둘러보기
 
-## 컴포넌트
+0. [들어가며](#0-들어가며)
+1. [데모 페이지](#1-데모-페이지)
+2. [컴포넌트](#2-컴포넌트)
+3. [HOC](#3-hoc)
+4. [Redux](#4-redux)
+5. [마치며](#5-마치며)
+
+## 0. 들어가며
+
+React 기반 web Tic Tac Toe 게임입니다.
+
+Redux 를 이용해 상태 관리를 하고 있습니다. React 컴포넌트와 연결하기 위해 react-redux 모듈을 사용했습니다. Redux ducks 구조를 따라 개발했습니다. 특정 액션에 반응하는 미들웨어를 작성하기 위해 redux-saga 모듈을 사용했습니다.
+
+Atomic Design 을 반영하여 개발했습니다.
+
+## 1. 데모 페이지
+
+데모 페이지는 여기에서 확인할 수 있습니다.
+
+로컬에서 실행할 경우 git, node.js, npm 이 필요합니다.
+
+1. git 을 이용해 프로젝트를 클론합니다.
+2. npm install 명령어로 필요한 패키지를 설치합니다.
+3. npm start 명령어로 개발 서버를 실행합니다.
+
+## 2. 컴포넌트
 
 - [Atoms](#atoms)
   - [Div](#div)
@@ -29,6 +54,8 @@
   - [GamePage](#gamepage)
 
 ### Atoms
+
+기본 HTML 태그를 커스터마이징한 컴포넌트입니다.
 
 #### Div
 
@@ -86,6 +113,10 @@
   - span tag
 
 ### Molecules
+
+Atoms 를 바탕으로 조합한 가장 기초적인 기능을 가지고 있는 컴포넌트 블록입니다.
+
+한 Molecule 은 하나의 기능만 수행하도록 설계합니다.
 
 #### MainTitle
 
@@ -168,6 +199,8 @@
 
 ### Organisms
 
+Atoms 나 Molecules 를 조합하여 만든 인터페이스의 한 영역입니다.
+
 #### MainHeader
 
 - return:
@@ -211,6 +244,8 @@
 
 ### Templates
 
+화면 레이아웃을 설계하는 컴포넌트입니다.
+
 #### GameTemplate
 
 - props:
@@ -227,6 +262,8 @@
     ```
 
 ### Pages
+
+Template Component 의 특정 인스턴스입니다.
 
 #### GamePage
 
@@ -245,3 +282,57 @@
 - reducer:
   - games 리듀서에 연결
   - gameProcess state 를 gameProcess prop 에 연결
+
+## 3. HOC
+> Higher Order Components
+
+- [withValidProps](#withvalidprops)
+- [withValidStyleNames](#withvalidstylenames)
+
+### withValidProps
+
+- params:
+  0. validator:
+    반환 할 컴포넌트가 받을 props 를 검사하여 올바른 형태의 props 를 반환하는 함수
+  1. Comp:
+    HOC 에서 반환할 컴포넌트가 랜더링할 컴포넌트
+
+- return: Component
+  - 모든 props 는 validator 를 통해서만 Component 에 전달된다.
+
+### withValidStyleNames
+
+- params:
+  0. validStyleNames:
+    올바른 styleNames 를 담고 있는 배열
+  1. Comp:
+    HOC 에서 반환할 컴포넌트가 랜더링할 컴포넌트
+
+- return: Component
+  - 모든 props 는 styleNames prop 을 가진 상태가 된다.
+  - 올바르지 않은 styleName 은 제거된다.
+
+
+## 4. Redux
+
+- [games](#games)
+
+### games
+
+- state:
+  - gameProcess:
+    'chooseMarker', 'isPlaying', 'endGame'
+  - gameStatus:
+    게임 보드 현황을 담고 있는 배열
+  - playerMarker:
+    'X', 'O'
+  - computerMarker:
+    'X', 'O'
+  - winner:
+    'computer', 'player', 'draw'
+
+## 5. 마치며
+
+아직 디자인 작업이 완료되지 않은 상태입니다. 새로운 버전에서는 디자인을 꾸밀 예정입니다.
+
+처음으로 돌아가려면 [여기](#web-tic-tac-toe-game)를 클릭하세요.
